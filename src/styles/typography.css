@@ -1,0 +1,38 @@
+:root {
+	/* FONT */
+	--font-size-base: clamp(0.9rem, 0.33vw + 0.93rem, 1.1rem);
+	--font-size-lg: clamp(1rem, 1.7vw + 1.2rem, 1.9rem);
+	--font-size-xl: clamp(0.25rem, 2.38vw + 1.85rem, 5rem);
+	--font-size-xxl: clamp(1.25rem, 3.38vw + 2.85rem, 6rem);
+
+	--color-text: hsla(193, 69%, 88%, 1);
+	--color-bg: hsla(182, 83%, 9%, 1);
+	--color-border: hsl(17, 24%, 90%);
+	--gradient-bg: linear-gradient(180deg, #da62c4, #ef7b45ff);
+	--astro-gradient: linear-gradient(0deg, #d84727ff, #da62c4);
+}
+p {
+	font-size: var(--font-size-base);
+	font-weight: 200;
+	color: var(--color-text);
+	line-height: 1.4;
+	font-stretch: normal;
+}
+
+.h1 {
+	font-size: var(--font-size-xl);
+	font-weight: 600;
+	color: var(--color-text);
+	line-height: 1.1;
+}
+
+.h2 {
+	font-size: var(--font-size-lg);
+	font-weight: 600;
+	line-height: 1.1;
+}
+.h3 {
+	font-size: var(--font-size-base);
+	font-weight: 600;
+	line-height: 1.1;
+}

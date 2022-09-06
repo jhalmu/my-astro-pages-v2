@@ -1,0 +1,74 @@
+---
+import { Icon } from 'astro-icon';
+---
+
+<nav class="navbar">
+	<ul class="nav-links">
+		<li class="nav-item">
+			<a href="/" aria-label="Back to frontpage"
+				><h1 class="h1 text-gradient">stackoverlove.me</h1>
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="/about" aria-label="About page" title="about"
+				><Icon name="mdi:about" width={25} />
+			</a>
+		</li>
+		<li class="nav-item">
+			<a
+				href="https://www.linkedin.com/in/juhahalmu"
+				title="LinkedIn"
+				aria-label="My LinkedIn Profile"
+				><Icon name="mdi:linkedin" alt="Me in LinkedIn" width={25} />
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="https://twitter.com/jhalmu" title="Twitter" aria-label="To my Twitter"
+				><Icon name="mdi:twitter" alt="Me in Twitter" width={25} />
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="https://github.com/jhalmu" title="GitHub" aria-label="To my Github"
+				><Icon name="mdi:github" alt="My Github page" width={25} />
+			</a>
+		</li>
+	</ul>
+</nav>
+<style>
+	.navbar {
+		padding: 1.5rem;
+	}
+	.nav-item .h1 {
+		font-size: var(--font-size-xl);
+		line-height: 1.4;
+		font-weight: 600;
+		color: var(--color-text);
+		line-height: 1.1;
+	}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 2rem;
+		overflow: hidden;
+		justify-content: space-between;
+	}
+	li {
+		float: right;
+		margin-left: 1rem;
+	}
+	li:first-child {
+		float: left;
+		padding-left: 2rem;
+	}
+	li a {
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		padding: 1em;
+	}
+	li:not(:first-child) a:hover {
+		background-color: #f06bd7;
+		border-radius: 50%;
+		padding: 1em;
+	}
+</style>

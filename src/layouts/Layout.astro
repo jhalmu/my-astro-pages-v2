@@ -1,0 +1,25 @@
+---
+import BaseHead from '@components/BaseHead.astro';
+import '@styles/a_reset.scss';
+import '@styles/main.css';
+import '@styles/typography.css';
+import '@styles/utils.css';
+
+export interface Props {
+	title: string;
+	description?: string;
+	url?: URL | string;
+	image?: string;
+}
+
+const title = Astro.props.title || 'Tervetuloa kotisivuilleni';
+const description = Astro.props.description || 'Juha Halmun portfolio ja kotisivut';
+---
+
+<!DOCTYPE html>
+<html lang="fi">
+	<BaseHead title={title} description={description} />
+	<body>
+		<slot />
+	</body>
+</html>
