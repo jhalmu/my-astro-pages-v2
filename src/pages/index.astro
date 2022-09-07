@@ -1,19 +1,21 @@
 ---
+import Github from '@components/Github.astro';
 import Hero from '@components/Hero.astro';
 import Navbar from '@components/Navbar.astro';
 import Layout from '@layouts/Layout.astro';
 ---
 
-<Layout title="Tervetuloa kotisivuilleni." description="Etusivu">
-	<div class="wrapper">
+<Layout
+	title="Tervetuloa kotisivuilleni."
+	description="Juha Halmun projekti- ja kotisivut. Koodaus. Kauneus."
+>
+	<header class="grid">
 		<Navbar />
-		<header class="header">
-			<Hero />
-		</header>
-		<main class="main">
-			<article class="article_1">Article 1</article>
-			<article class="article_2">Article 2</article>
-		</main>
-		<footer>Jou</footer>
-	</div>
+	</header>
+	<main class="grid">
+		<Hero />
+	</main>
+	<section class="grid">
+		<Github />
+	</section>
 </Layout>

@@ -1,0 +1,75 @@
+---
+import { Icon } from 'astro-icon';
+import 'dotenv/config';
+const response = await fetch('https://api.github.com/graphql', {
+	method: 'POST',
+	headers: {
+		'Content-Type': 'application/json',
+		Authorization: `Bearer ${import.meta.env.GIT_BEARER_TOKEN}`
+	},
+	body: JSON.stringify({
+		query: `
+        query {
+				user(login: "jhalmu") {
+					avatarUrl
+					pinnedItems(first: 20, types: REPOSITORY) {
+						totalCount
+						nodes {
+							... on Repository {
+								id
+								name
+								createdAt
+								url
+								description
+								homepageUrl
+								isFork
+								languages(first: 10) {
+									nodes {
+										name
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+        `
+	})
+});
+
+const json = await response.json();
+const results = json.data;
+const image = (results.user.avatarUrl = Astro.props);
+const datax = results.user.pinnedItems.nodes;
+
+//const { image } = Astro.props;
+
+if (json.errors) {
+	console.log(json.errors);
+	throw new Error('Failed to fetch API');
+}
+---
+
+<div class="card-wrapper">
+	{
+		datax.map((data: { name: String; description: String; homepageUrl: any; url: any }) => (
+			<div class="card">
+				<div class="card-item">
+					<h2 class="h3">{data.name}</h2>
+					<p>{data.description}</p>
+				</div>
+				<div class="card-icons">
+					{data.homepageUrl && (
+						<a href={data.homepageUrl} aria-label="To Demo page">
+							<Icon name="mdi:web" width={25} alt="Demo page" />
+						</a>
+					)}
+
+					<a href={data.url} aria-label="Github repo">
+						<Icon name="mdi:github" alt="This in Github" width={25} />
+					</a>
+				</div>
+			</div>
+		))
+	}
+</div>
