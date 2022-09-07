@@ -1,3 +1,11 @@
+# Welcome to Journal, again
+## 7.9.2022
+- Started new project, refactored html-structure. Learning how to grid. 
+- Added new font map from Utopia.fyi:s page. Maeby refactoring to scss because Astro works well with it. Well, why, i dont know yet.
+- Colors and random tweaks.   
+
+
+
 # Welcome to [Astro](https://astro.build)
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)

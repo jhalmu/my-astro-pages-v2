@@ -9,13 +9,18 @@ import Layout from '@layouts/Layout.astro';
 	title="Tervetuloa kotisivuilleni."
 	description="Juha Halmun projekti- ja kotisivut. Koodaus. Kauneus."
 >
-	<header class="grid">
-		<Navbar />
-	</header>
-	<main class="grid">
-		<Hero />
-	</main>
-	<section class="grid">
+	<div class="the_wrapper">
+		<header class="grid">
+			<Navbar />
+		</header>
+		<main class="grid">
+			<Hero />
+		</main>
+		<div class="thebutton">
+			<a href="#projektit" class="projekti_button">Katso projektit!</a>
+		</div>
+	</div>
+	<section class="the_wrapper">
 		<Github />
 	</section>
 </Layout>
