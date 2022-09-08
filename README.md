@@ -8,7 +8,8 @@
 
 # Welcome to [Astro](https://astro.build)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+![Stackoverlove sivut](https://repository-images.githubusercontent.com/533493547/b738aac1-df2d-401c-8b3d-a82c65397b23)
+
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
