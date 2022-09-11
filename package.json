@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "astro dev",
 		"start": "node dist/index.js",
-		"build": "astro build --port 3000",
+		"build": "astro build --host 3000",
 		"preview": "astro preview",
 		"astro": "astro",
 		"format": "prettier --write --plugin-search-dir=. ."
