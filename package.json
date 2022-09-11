@@ -16,13 +16,12 @@
 		"dotenv": "^16.0.2",
 		"graphql-request": "^5.0.0",
 		"marked": "^4.1.0",
-		"open-props": "^1.4.14",
-		"postcss-jit-props": "^1.0.7",
 		"scss-reset": "^1.2.2"
 	},
 	"devDependencies": {
 		"@astrojs/sitemap": "^1.0.0",
-		"@types/node": "^18.7.14",
+		"@types/cssnano": "^5.1.0",
+		"@types/node": "^18.7.16",
 		"autoprefixer": "^10.4.8",
 		"graphql": "^16.6.0",
 		"postcss": "^8.4.16",
