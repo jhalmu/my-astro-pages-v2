@@ -10,15 +10,14 @@
 		"astro": "astro",
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
-	"dependencies": {
-		"astro": "^1.1.5",
-		"astro-icon": "^0.7.3",
-		"dotenv": "^16.0.2"
-	},
 	"devDependencies": {
 		"@types/cssnano": "^5.1.0",
 		"@types/node": "^18.7.16",
+		"astro": "^1.2.1",
+		"astro-icon": "^0.7.3",
 		"autoprefixer": "^10.4.8",
+		"core-util-is": "^1.0.3",
+		"dotenv": "^16.0.2",
 		"graphql": "^16.6.0",
 		"graphql-request": "^5.0.0",
 		"marked": "^4.1.0",
