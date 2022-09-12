@@ -4,20 +4,20 @@
 	"private": true,
 	"scripts": {
 		"dev": "astro dev",
-		"start": "node dist/index.js",
+		"start": "node dist/index.html",
 		"build": "astro build",
 		"preview": "astro preview",
 		"astro": "astro",
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
-		"@types/cssnano": "^5.1.0",
 		"@types/node": "^18.7.16",
 		"astro": "^1.2.1",
 		"astro-icon": "^0.7.3",
 		"autoprefixer": "^10.4.8",
 		"core-util-is": "^1.0.3",
 		"dotenv": "^16.0.2",
+		"esm": "^3.2.25",
 		"graphql": "^16.6.0",
 		"graphql-request": "^5.0.0",
 		"marked": "^4.1.0",
