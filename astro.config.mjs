@@ -4,7 +4,7 @@ import { defineConfig } from 'astro/config';
 export default defineConfig(
 	{
 		sitemap: true,
-		server: { port: 8080 }
+		server: { port: 3000 }
 	},
 	{
 		vite: {

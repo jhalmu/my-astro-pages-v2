@@ -1,17 +1,22 @@
 # Welcome to Journal, again
+
 ## 7.9.2022
-- Started new project, refactored html-structure. Learning how to grid. 
+
+- Started new project, refactored html-structure. Learning how to grid.
 - Added new font map from Utopia.fyi:s page. Maeby refactoring to scss because Astro works well with it. Well, why, i dont know yet.
-- Colors and random tweaks.   
+- Colors and random tweaks.
 
 ## 8.9.2022
+
 - Adding screencaptures of my pages.
 
-# Welcome to [Stackoverlove.me](https://Stackoverlove.me)
+## 12.9.2022
+
+- Build prosess have been broken. Have updated packets - preview works. Uploading to Railway for public existense.
+
+## Welcome to [Stackoverlove.me](https://Stackoverlove.me)
 
 ![Stackoverlove sivut](https://repository-images.githubusercontent.com/533493547/b738aac1-df2d-401c-8b3d-a82c65397b23)
-
-
 
 ## 🧞 Commands
 
