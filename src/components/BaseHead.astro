@@ -18,7 +18,7 @@ const {
 	analytics = Astro.props.analytics
 } = Astro.props;
 
-const imageUrl = `${URL}/${image || 'Default.png'}`;
+const imageUrl = './Default.png';
 const path = pathname || Astro.url.pathname;
 const ogUrl = `${URL}${path}`;
 ---

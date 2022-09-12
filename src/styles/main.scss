@@ -7,12 +7,14 @@ html {
 	/* base font-size */
 	font-size: 14px;
 }
+
 body {
 	background-image: var(--gradient-bg);
 	min-height: 100vh;
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
 }
+
 .the_wrapper {
 	min-height: 100vh;
 	justify-content: center;
@@ -26,6 +28,7 @@ body {
 	grid-template-columns: repeat(12, 1fr);
 	gap: 2rem;
 }
+
 main {
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 88%, 0 100%);
 	background-color: #d9526d;
@@ -36,14 +39,17 @@ main {
 	background-repeat: no-repeat;
 	background-position: right;
 }
+
 .navbar {
 	grid-column: span 12;
 }
+
 .hero {
 	grid-column: 2 / span 6;
 	font-size: var(--font-size-5);
 	padding: 10rem 10rem;
 }
+
 .card-wrapper {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -55,6 +61,7 @@ main {
 	padding-top: 15rem;
 	margin: 0 auto;
 }
+
 .card {
 	max-width: 30rem;
 	border-radius: 1rem;
@@ -66,22 +73,27 @@ main {
 	opacity: 70%;
 	place-items: center;
 }
+
 .card-icons {
 	display: flex;
 	padding: 1rem;
 	justify-content: center;
 	cursor: pointer;
 }
+
 .card-icons a {
 	padding: 2rem;
 }
+
 .card-icons a:hover {
 	background-color: #d48998;
 	border-radius: 50%;
 }
-.card-item > .h2 {
+
+.card-item>.h2 {
 	white-space: nowrap;
 }
+
 .thebutton {
 	display: flex;
 	min-height: 20rem;
@@ -100,16 +112,48 @@ main {
 	color: rgb(252, 249, 249);
 	font-size: 5rem;
 }
+
 .projekti_button a,
 a:hover {
 	background-color: #de3e5e;
 	color: black;
 }
+
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+.text-gradient {
+	font-weight: 900;
+	background-image: var(--astro-gradient);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 100% 200%;
+	background-position-y: 100%;
+	border-radius: 0.4rem;
+	animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+	0%,
+	100% {
+		background-position-y: 0%;
+	}
+
+	50% {
+		background-position-y: 80%;
+	}
+}
+
+
 /* responsive */
 @media screen and (max-width: 1200px) {
 	html {
 		font-size: 12px;
 	}
+
 	.h1 {
 		font-size: 6rem;
 	}
@@ -121,6 +165,7 @@ a:hover {
 		gap: 1rem;
 		margin: 0 auto;
 	}
+
 	.hero {
 		grid-column: 4 / span 6;
 		background-color: wheat;
@@ -130,15 +175,18 @@ a:hover {
 		margin-top: 1rem;
 		border-radius: 0.5rem;
 	}
+
 	.hero p {
 		color: rgb(15, 12, 12);
 	}
 }
+
 @media screen and (max-width: 960px) {
 	.the_wrapper {
 		display: flex;
 		flex-direction: column;
 	}
+
 	.card-wrapper {
 		grid-template-columns: 1fr;
 		max-width: 5rem;
@@ -146,6 +194,7 @@ a:hover {
 		gap: 2rem;
 		margin: 0 auto;
 	}
+
 	.hero {
 		grid-column: 4 / span 6;
 		background-color: wheat;
@@ -156,22 +205,26 @@ a:hover {
 		border-radius: 0.5rem;
 		color: black;
 	}
+
 	.h1,
 	.h2 {
 		font-size: var(--font-size-4);
 	}
 }
+
 @media screen and (max-width: 250px) {
 	.the_wrapper {
 		display: flex;
 		flex-direction: column;
 	}
+
 	.card-wrapper {
 		max-width: 5rem;
 		margin: 1rem;
 		gap: 2rem;
 		margin: 0 auto;
 	}
+
 	.hero {
 		grid-column: 4 / span 6;
 		background-color: wheat;
@@ -182,6 +235,7 @@ a:hover {
 		border-radius: 0.5rem;
 		color: black;
 	}
+
 	.h1,
 	.h2 {
 		font-size: var(--font-size-4);
