@@ -22,51 +22,47 @@ const path = pathname || Astro.url.pathname;
 const ogUrl = `${URL}${path}`;
 ---
 
-<!DOCTYPE html>
-<html lang="fi">
-	<head>
-		<!-- Global Metadata -->
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width , initial-scale=1.0" />
-		<link rel="icon" type="image/x-icon" href="/favicon.svg" />
-		<!-- Primary Meta Tags -->
-		<meta name="title" content={title} />
-		<meta name="description" content={description} />
-		<link rel="canonical" href={canonicalURL} />
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width , initial-scale=1.0" />
+<link rel="icon" type="image/x-icon" href="/favicon.svg" />
 
-		<!-- Open Graph / Facebook -->
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content={ogUrl} />
-		<meta property="og:title" content={title} />
-		<meta property="og:description" content={description} />
-		<meta property="og:image" content={imageUrl} />
+<!-- Primary Meta Tags -->
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalURL} />
 
-		<!-- Twitter -->
-		<meta property="twitter:card" content="Just a Head" />
-		<meta property="twitter:url" content={ogUrl} />
-		<meta property="twitter:title" content={title} />
-		<meta property="twitter:description" content={description} />
-		<meta property="twitter:image" content={imageUrl} />
-		<meta property="twitter:site" content="@jhalmu" />
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={ogUrl} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={imageUrl} />
 
-		<!-- Google Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&family=Qwitcher+Grypen:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
+<!-- Twitter -->
+<meta property="twitter:card" content="Just a Head" />
+<meta property="twitter:url" content={ogUrl} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={imageUrl} />
+<meta property="twitter:site" content="@jhalmu" />
 
-		<script is:inline>
-			var host = window.location.hostname;
-			if (host != 'localhost') {
-				// Place Google Analytics code here.
-				{
-					analytics;
-				}
-			}
-		</script>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+	href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&family=Qwitcher+Grypen:wght@400;700&display=swap"
+	rel="stylesheet"
+/>
 
-		<!-- Google Analytics -->
-	</head>
-</html>
+<script is:inline>
+	var host = window.location.hostname;
+	if (host != 'localhost') {
+		// Place Google Analytics code here.
+		{
+			analytics;
+		}
+	}
+</script>
+
+<!-- Google Analytics -->
