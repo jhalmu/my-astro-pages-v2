@@ -8,13 +8,12 @@ export interface Props {
 	analytics?: string;
 	pathname?: string;
 }
-
 const {
 	title = 'Stackoverlove - Juha Halmu',
 	description = Astro.props.description || 'Juha Halmun portfolio ja kotisivut',
 	canonicalURL = 'https://stackoverlove.me',
-	pathname,
-	analytics = Astro.props.analytics
+	pathname
+	//analytics = Astro.props.analytics
 } = Astro.props;
 
 const imageUrl = './Default.png';
@@ -22,15 +21,24 @@ const path = pathname || Astro.url.pathname;
 const ogUrl = `${URL}${path}`;
 ---
 
+<title>{title}</title>
 <!-- Global Metadata -->
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width , initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" type="image/x-icon" href="/favicon.svg" />
 
 <!-- Primary Meta Tags -->
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 <link rel="canonical" href={canonicalURL} />
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+	href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&family=Qwitcher+Grypen:wght@400;700&display=swap"
+	rel="stylesheet"
+/>
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
@@ -45,24 +53,4 @@ const ogUrl = `${URL}${path}`;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={imageUrl} />
-<meta property="twitter:site" content="@jhalmu" />
-
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-	href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&family=Qwitcher+Grypen:wght@400;700&display=swap"
-	rel="stylesheet"
-/>
-
-<script is:inline>
-	var host = window.location.hostname;
-	if (host != 'localhost') {
-		// Place Google Analytics code here.
-		{
-			analytics;
-		}
-	}
-</script>
-
-<!-- Google Analytics -->
+<meta property="twitter:site" content="@juhahalmu" />

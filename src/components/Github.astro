@@ -39,7 +39,7 @@ const response = await fetch('https://api.github.com/graphql', {
 
 const json = await response.json();
 const results = json.data;
-const image = (results.user.avatarUrl = Astro.props);
+//const image = (results.user.avatarUrl = Astro.props);
 const datax = results.user.pinnedItems.nodes;
 
 //const { image } = Astro.props;
@@ -62,12 +62,12 @@ if (json.errors) {
 				<div class="card-icons">
 					{data.homepageUrl && (
 						<a href={data.homepageUrl} target="_blank" aria-label="To Demo page">
-							<Icon name="mdi:web" width={35} alt="Demo page" />
+							<Icon name="mdi:web" width={35} title="Demo page" />
 						</a>
 					)}
 
 					<a href={data.url} target="_blank" aria-label="Github repo">
-						<Icon name="mdi:github" alt="This in Github" width={35} />
+						<Icon name="mdi:github" title="This in Github" width={35} />
 					</a>
 				</div>
 			</div>

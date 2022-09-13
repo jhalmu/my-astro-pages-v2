@@ -19,24 +19,12 @@
 		"noEmit": true,
 		"baseUrl": ".",
 		"paths": {
-			"@layouts/*": [
-				"src/layouts/*"
-			],
-			"@icons/*": [
-				"src/icons/*"
-			],
-			"@data/*": [
-				"src/data/*"
-			],
-			"@styles/*": [
-				"src/styles/*"
-			],
-			"@components/*": [
-				"src/components/*"
-			],
-			"@config/*": [
-				"src/config/*"
-			]
+			"@layouts/*": ["src/layouts/*"],
+			"@icons/*": ["src/icons/*"],
+			"@data/*": ["src/data/*"],
+			"@styles/*": ["src/styles/*"],
+			"@components/*": ["src/components/*"],
+			"@config/*": ["src/config/*"]
 		}
 	}
 }

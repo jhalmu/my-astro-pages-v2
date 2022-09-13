@@ -19,17 +19,17 @@ import { Icon } from 'astro-icon';
 				href="https://www.linkedin.com/in/juhahalmu"
 				title="LinkedIn"
 				aria-label="My LinkedIn Profile"
-				><Icon name="mdi:linkedin" alt="Me in LinkedIn" width={25} />
+				><Icon name="mdi:linkedin" aria-label="Me in LinkedIn" width={25} />
 			</a>
 		</li>
 		<li class="nav-item">
 			<a href="https://twitter.com/juhahalmu" title="Twitter" aria-label="To my Twitter"
-				><Icon name="mdi:twitter" alt="Me in Twitter" width={25} />
+				><Icon name="mdi:twitter" aria-label="Me in Twitter" width={25} />
 			</a>
 		</li>
 		<li class="nav-item">
 			<a href="https://github.com/jhalmu" title="GitHub" aria-label="To my Github"
-				><Icon name="mdi:github" alt="My Github page" width={25} />
+				><Icon name="mdi:github" aria-label="My Github page" width={25} />
 			</a>
 		</li>
 	</ul>
@@ -95,7 +95,6 @@ import { Icon } from 'astro-icon';
 		}
 		.nav-item .h1 {
 			font-size: var(--font-size-4);
-			grid-columns: 1fr;
 		}
 	}
 </style>
