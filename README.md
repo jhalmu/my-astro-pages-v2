@@ -14,6 +14,12 @@
 
 - Build prosess have been broken. Have updated packets - preview works. Uploading to Railway for public existense.
 
+ ## 13.9.2022
+ 
+ - Note to my self: In astro conf put server flag **host:true** so it will be published. Free money runs in Railway now and I you can't see the page, watch the picture. But it have been up :) https://my-astro-pages-v2-production.up.railway.app/
+
+ - I move to next project and propably have new layout. Or if.... if I dockerise this and put it to my own server? 
+
 ## Welcome to [Stackoverlove.me](https://Stackoverlove.me)
 
 ![Stackoverlove sivut](https://repository-images.githubusercontent.com/533493547/b738aac1-df2d-401c-8b3d-a82c65397b23)
