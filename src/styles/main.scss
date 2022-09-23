@@ -171,10 +171,11 @@ html:focus-within {
 		padding-top: 5rem;
 		margin-top: 1rem;
 		border-radius: 0.5rem;
+		color: rgb(15, 12, 12)
 	}
 
-	.hero p {
-		color: rgb(15, 12, 12);
+	.hero>p {
+		color: rgb(15, 12, 12) !important;
 	}
 }
 
